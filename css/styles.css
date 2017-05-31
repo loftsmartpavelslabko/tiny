@@ -120,10 +120,9 @@
 	background-position: top;
 }
 .letters-logo{
-	margin: 0;
 	display: flex;
 	justify-content: space-between;
-	margin: 1% 3%;
+	margin: 0.1% 3%;
 	height: 10%;
 	max-width: 90%;
 	border-bottom: 1px solid gray;
