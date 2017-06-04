@@ -1,12 +1,23 @@
+/*
+	VARIABLES
+*/
 $brick: #b10000;
-.item-color-brick{
+$purple: #b300e2;
+
+/*
+
+	STYLES
+
+*/
+
+.item-color-brick {
 	background-color: $brick;
 	&:hover .color-brick{
 		background-color: $brick;
 	}
 }
-$purple: #b300e2;
-.item-color-purple{
+
+.item-color-purple {
 	background-color: $purple;
 	&:hover .color-purple{
 		background-color: $purple;
