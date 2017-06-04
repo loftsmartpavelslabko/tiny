@@ -65,9 +65,7 @@
 	text-decoration: none;
 	background-color: gray;
 }
-.item-color-brick{
-	background-color: #b10000;
-}
+
 .item-color-orange{
 	background-color: #ff7900;
 }
@@ -77,12 +75,8 @@
 .item-color-blue{
 	background-color: #00a0e2;
 }
-.item-color-purple{
-	background-color: #b300e2;
-}
-.color-brick:hover{
-	background-color: #b10000;
-}
+
+
 .color-orange:hover{
 	background-color: #ff7900;
 }
@@ -92,12 +86,10 @@
 .color-blue:hover{
 	background-color: #00a0e2;
 }
-.color-purple:hover{
-	background-color: #b300e2;
-}
+
 .wrapper{
 	margin: 10% 5% 10% 0;
-	width: 60%;
+	min-width: 800px;
 	height: 55%;
 	padding: 0.5%;
 	background-color: white;
