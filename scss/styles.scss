@@ -1,8 +1,14 @@
 /*
 	VARIABLES
 */
-$brick: #b10000;
-$purple: #b300e2;
+
+$clr-main: #770000;
+$clr-one: #b10000;
+$clr-two: #ff7900;
+$clr-three: #2de200;
+$clr-four: #00a0e2;
+$clr-five: #b300e2;
+$font-page: Arial, Helvetica, sans-serif;
 
 /*
 
@@ -10,16 +16,115 @@ $purple: #b300e2;
 
 */
 
-.item-color-brick {
-	background-color: $brick;
-	&:hover .color-brick{
-		background-color: $brick;
+.item-color-one {
+	background-color: $clr-one;
+	&:hover .color-one{
+		background-color: $clr-one;
 	}
 }
 
-.item-color-purple {
-	background-color: $purple;
-	&:hover .color-purple{
-		background-color: $purple;
+.item-color-two {
+	background-color: $clr-two;
+	&:hover .color-two{
+		background-color: $clr-two;
 	}
 }
+
+.item-color-three {
+	background-color: $clr-three;
+	&:hover .color-three{
+		background-color: $clr-three;
+	}
+}
+
+.item-color-four {
+	background-color: $clr-four;
+	&:hover .color-four{
+		background-color: $clr-four;
+	}
+}
+
+.item-color-five {
+	background-color: $clr-five;
+	&:hover .color-five{
+		background-color: $clr-five;
+	}
+}
+
+.page{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	background-color: $clr-main;
+}
+
+.side-heading{
+	display: flex;
+	flex: inherit;
+	font-family: $font-page;
+	font-size: 100%;
+	color: gray;
+	transform: rotate(270deg);
+	list-style-type: none;
+}
+
+.nav-list{
+	display: flex;
+	flex-flow: column;
+	list-style-type: none;
+	font-family: $font-page;
+}
+
+.nav-link{
+	display: block;
+	margin: 0 0 0 5px;
+	padding: 3px 40px 3px 10px;
+	font-family: $font-page;
+	color: white;
+	text-decoration: none;
+	background-color: gray;
+}
+
+.top-heading{
+	flex: 3;
+	font-family: $font-page;
+	font-size: 180%;
+	font-weight: bold;
+	color: $clr-main;
+	letter-spacing: 0.1em;
+}
+
+.main-top-heading{
+	font-family: $font-page;
+	font-size: 90%;
+	color: $clr-main;
+}
+
+.section-heading{
+	font-family: $font-page;
+	font-size: 100%;
+	font-weight: bold;
+	color: gray;
+	letter-spacing: 0.1em;
+}
+
+.main-heading{
+	margin: 0;
+	font-family: $font-page;
+	font-size: 90%;
+	color: $clr-main;
+}
+
+.main-top-paragraph{
+	font-family: $font-page;
+	font-size: 90%;
+	color: black;
+}
+
+.main-paragraph{
+	margin: 0;
+	font-family: $font-page;
+	font-size: 90%;
+	color: black;
+}
+

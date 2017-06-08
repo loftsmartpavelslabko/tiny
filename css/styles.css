@@ -1,9 +1,3 @@
-.page{
-	display: flex;
-	align-items:center;
-	justify-content: center;
-	background-color: #770000;
-}
 .sidebar{
 	margin-left: 10%;
 	vertical-align: middle;
@@ -23,15 +17,7 @@
 	margin: 7% 0 1% 7%;
 	width: 20px;
 }
-.side-heading{
-	display: flex;
-	flex: inherit;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	color: gray;
-	transform: rotate(270deg);
-	list-style-type: none;
-}
+
 .side-heading:before{
 	content: url(../images/pointer.png);
 	padding-right: 0.5%;
@@ -44,49 +30,12 @@
 .nav-bar{
 	width: inherit;
 }
-.nav-list{
-	display: flex;
-	flex-flow: column;
-	list-style-type: none;
-	font-family: Arial, Helvetica, sans-serif;
-}
 .nav-item{
 	display: block;
 	background-color:gray;
 	margin-left: 0;
 	margin-top: 1px;
 }
-.nav-link{
-	display: block;
-	margin: 0 0 0 5px;
-	padding: 3px 40px 3px 10px;
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-	text-decoration: none;
-	background-color: gray;
-}
-
-.item-color-orange{
-	background-color: #ff7900;
-}
-.item-color-green{
-	background-color: #2de200;
-}
-.item-color-blue{
-	background-color: #00a0e2;
-}
-
-
-.color-orange:hover{
-	background-color: #ff7900;
-}
-.color-green:hover{
-	background-color: #2de200;
-}
-.color-blue:hover{
-	background-color: #00a0e2;
-}
-
 .wrapper{
 	margin: 10% 5% 10% 0;
 	min-width: 800px;
@@ -95,7 +44,6 @@
 	background-color: white;
 	border-radius: 10px;
 	border: 2px solid #770000;
-
 }
 .content{
 	position: relative;
@@ -119,14 +67,6 @@
 	max-width: 90%;
 	border-bottom: 1px solid gray;
 }
-.top-heading{
-	flex: 3;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 180%;
-	font-weight: bold;
-	color: #770000;
-	letter-spacing: 0.1em;
-}
 .letters{
 	color: gray;
 }
@@ -146,43 +86,15 @@
 	max-width: 90%;
 	margin: 0 3%;
 }
-.section-heading{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	font-weight: bold;
-	color: gray;
-	letter-spacing: 0.1em;
-}
 .section-heading:before{
 	content: url(../images/pointer.png);
 	padding-right: 1%;
-}
-.main-heading{
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
-	color: #770000;
-}
-.main-top-heading{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
-	color: #770000;
 }
 .main-top-section{
 	border-bottom: 2px dotted gray;
 	margin-right: 30%;
 }
-.main-top-paragraph{
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
-	color: black;
-}
-.main-paragraph{
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
-	color: black;
-}
+
 .hide-paragraph{
 	display: none;
 }
