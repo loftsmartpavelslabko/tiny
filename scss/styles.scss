@@ -1,3 +1,5 @@
+@import "reset";
+
 /*
 	VARIABLES
 */
@@ -52,9 +54,6 @@ $font-page: Arial, Helvetica, sans-serif;
 }
 
 .page{
-	display: flex;
-	align-items:center;
-	justify-content: center;
 	background-color: $clr-main;
 }
 
@@ -129,7 +128,7 @@ $font-page: Arial, Helvetica, sans-serif;
 }
 
 .sidebar{
-	position: relative;
+	position: absolute;
 	margin-left: 10%;
 	vertical-align: middle;
 }
@@ -142,10 +141,18 @@ $font-page: Arial, Helvetica, sans-serif;
 	border-radius: 10px 0 0 10px;
 	line-height: 2;
 	margin-top: 5px;
-	margin-right: -160px;	
+	margin-right: -160px;
+
+	&.position-top {
+
+	}
 }
 
 .active .side-menu{
 	width: 200px;
 	margin-right: 0;
+}
+
+.wrapper {
+	position: relative;
 }
