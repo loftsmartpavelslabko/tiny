@@ -128,3 +128,24 @@ $font-page: Arial, Helvetica, sans-serif;
 	color: black;
 }
 
+.sidebar{
+	position: relative;
+	margin-left: 10%;
+	vertical-align: middle;
+}
+
+.side-menu{
+	position: absolute;
+	display: flex;
+	width: inherit;
+	background-color: white;
+	border-radius: 10px 0 0 10px;
+	line-height: 2;
+	margin-top: 5px;
+	margin-right: -160px;	
+}
+
+.active .side-menu{
+	width: 200px;
+	margin-right: 0;
+}
