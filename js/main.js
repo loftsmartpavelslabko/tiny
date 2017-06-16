@@ -6,7 +6,9 @@ var topMenu = [{
         href: '#/services',
         text: 'Services',
         content: 'Not available now.'
-    }];
+    }],
+
+    bottomMenu = [];
 
 
 
@@ -52,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     container  = document.querySelector('#top-menu');
     drawMenu(topMenu, container);
+
+    /*todo draw bottom menu*/
 
 
     document.querySelectorAll('.side-top').forEach(function (item) {
