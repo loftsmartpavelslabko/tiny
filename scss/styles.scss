@@ -139,7 +139,6 @@ $font-page: Arial, Helvetica, sans-serif;
 	background-color: white;
 	border-radius: 10px 0 0 10px;
 	line-height: 2;
-
 	
 
 	&.position-top {
@@ -150,6 +149,12 @@ $font-page: Arial, Helvetica, sans-serif;
 	&.position-bottom {
 		top: 205px;
 		left: -35px;	
+	}
+
+	&.active {
+		&.position-top, &.position-bottom {
+			left: -197px;
+		}
 	}
 }
 
