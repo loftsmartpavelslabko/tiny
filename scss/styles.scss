@@ -67,6 +67,11 @@ $font-page: Arial, Helvetica, sans-serif;
 	list-style-type: none;
 }
 
+.nav-bar{
+	padding: 20px 0;
+	width: inherit;
+}
+
 .nav-list{
 	display: flex;
 	flex-flow: column;
@@ -84,6 +89,12 @@ $font-page: Arial, Helvetica, sans-serif;
 	background-color: gray;
 }
 
+.logo{
+	flex: inherit;
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+
 .top-heading{
 	flex: 3;
 	font-family: $font-page;
@@ -96,10 +107,18 @@ $font-page: Arial, Helvetica, sans-serif;
 .main-top-heading{
 	font-family: $font-page;
 	font-size: 90%;
+	font-weight: bold;
 	color: $clr-main;
 }
 
+.main-top-section{
+	padding-bottom: 15px; 
+	border-bottom: 2px dotted gray;
+	margin-right: 30%;
+}
+
 .section-heading{
+	padding: 10px 0;
 	font-family: $font-page;
 	font-size: 100%;
 	font-weight: bold;
@@ -111,6 +130,7 @@ $font-page: Arial, Helvetica, sans-serif;
 	margin: 0;
 	font-family: $font-page;
 	font-size: 90%;
+	font-weight: bold;
 	color: $clr-main;
 }
 
@@ -147,7 +167,7 @@ $font-page: Arial, Helvetica, sans-serif;
 	}
 	
 	&.position-bottom {
-		top: 205px;
+		top: 245px;
 		left: -35px;	
 	}
 
@@ -156,11 +176,6 @@ $font-page: Arial, Helvetica, sans-serif;
 			left: -197px;
 		}
 	}
-}
-
-.active .side-menu{
-	left: -130px;
-
 }
 
 .side-top{
@@ -189,6 +204,7 @@ $font-page: Arial, Helvetica, sans-serif;
 	margin: 0.5%; 
 	min-height: 400px;
 	background-color: white;
+	line-height: 1.5;
 }
 
 .letters-logo{

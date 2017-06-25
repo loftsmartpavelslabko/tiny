@@ -30,7 +30,37 @@ var topMenu = [{
     	content: 'Not available now.'
     }];
 
-    bottomMenu = [];
+    bottomMenu = [{
+        href: '#/a',
+        text: 'A',
+        color: 'item-color-one',
+        hcolor: 'color-one',
+        content: 'Not available now.'
+    }, {
+        href: '#/b',
+        text: 'B',
+        color: 'item-color-two',
+        hcolor: 'color-two',
+        content: 'Not available now.'
+    }, {
+    	href: '#/c',
+    	text: 'C',
+        color: 'item-color-three',
+        hcolor: 'color-three',
+    	content: 'Not available now.'
+    }, {
+    	href: '#/d',
+    	text: 'D',
+        color: 'item-color-four',
+        hcolor: 'color-four',
+    	content: 'Not available now.'
+    }, {
+    	href: '#/e',
+    	text: 'E',
+        color: 'item-color-five',
+        hcolor: 'color-five',
+    	content: 'Not available now.'
+    }];
 
 
 function drawMenuItem(item, menu, menuIndex) {
