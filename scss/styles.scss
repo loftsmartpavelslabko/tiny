@@ -114,9 +114,12 @@ $font-page: Arial, Helvetica, sans-serif;
 .main-top-section{
 	padding-bottom: 15px; 
 	border-bottom: 2px dotted gray;
-	margin-right: 30%;
+	margin-right: 20%;
 }
 
+.main-text{
+	padding: 5px 0 5px 40px;
+}
 .section-heading{
 	padding: 10px 0;
 	font-family: $font-page;
@@ -147,6 +150,12 @@ $font-page: Arial, Helvetica, sans-serif;
 	color: black;
 }
 
+.main-section{
+	display: flex;
+	padding-top: 0.5%;
+	margin-right: 20%;
+}
+
 .sidebar{
 	position: absolute;
 	vertical-align: middle;
@@ -173,7 +182,7 @@ $font-page: Arial, Helvetica, sans-serif;
 
 	&.active {
 		&.position-top, &.position-bottom {
-			left: -197px;
+			left: -195px;
 		}
 	}
 }
