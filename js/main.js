@@ -108,6 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /*todo draw bottom menu*/
 
+    var crisper;
+
+    crisper = document.querySelector('#bottom-menu');
+    drawMenu(bottomMenu, crisper);
+
 
     document.querySelectorAll('.side-top').forEach(function (item) {
         item.addEventListener('click', function() {
