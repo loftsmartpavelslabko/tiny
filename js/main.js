@@ -131,9 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     
-    link.addEventListener('click', function () {
-    	callback('.hiddiv');
-    })
+    
 });
 
 
