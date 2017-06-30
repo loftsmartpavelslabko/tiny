@@ -66,12 +66,17 @@ var topMenu = [{
 function drawMenuItem(item, menu, menuIndex) {
     // todo create li element and set href and text
     var element = document.createElement('li'),
-        link = document.createElement('a');
+        link = document.createElement('a'),
+        hiddiv = document.createElement('div');
 
     element.classList.add('nav-item', item.color);
     link.classList.add('nav-link', item.hcolor);
     link.setAttribute('href', item.href);
     link.innerText = item.text;
+    hiddiv.classList.add('content-hidden');
+    hiddiv.innerText = item.content;
+
+    link.appendChild(hiddiv);
 
     element.appendChild(link);
 
@@ -125,4 +130,10 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
+    
+    link.addEventListener('click', function () {
+    	callback('.hiddiv');
+    })
 });
+
+
