@@ -130,7 +130,23 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-    
+    var list = document.querySelector('.nav-list');
+	
+	list.addEventListener('click', function (event) {
+				
+		var target = event.target,
+			menuItem = target.querySelector('.nav-item'),		
+			mainContent = document.querySelector('#data-content'),
+			content = document.querySelector('.content-hidden');
+		
+
+		if (menuItem)
+		{
+			mainContent.innerHTML = content.innerHTML;
+		}
+		
+	});
+
     
 });
 
