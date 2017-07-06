@@ -106,7 +106,8 @@ function drawMenu(menu, container) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var container;
+    var container,
+        mainContent = document.querySelector('#data-content');
 
     container  = document.querySelector('#top-menu');
     drawMenu(topMenu, container);
@@ -130,22 +131,22 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-    var list = document.querySelector('.nav-list');
-	
-	list.addEventListener('click', function (event) {
-				
-		var target = event.target,
-			menuItem = target.querySelector('.nav-item'),		
-			mainContent = document.querySelector('#data-content'),
-			content = document.querySelector('.content-hidden');
-		
+    var list = document.querySelectorAll('.nav-list');
+    for (var i = 0; i < list.length; i += 1) {
+        list[i].addEventListener('click', function (event) {
 
-		if (menuItem)
-		{
-			mainContent.innerHTML = content.innerHTML;
-		}
-		
-	});
+            var target = event.target,
+                content = target.querySelector('.content-hidden');
+
+
+            if (content) {
+                mainContent.innerHTML = content.innerHTML;
+            }
+
+        });
+    }
+	
+
 
     
 });
