@@ -62,6 +62,7 @@ var topMenu = [{
     	content: 'Not available now.'
     }];
 
+    mainContent = document.querySelector('#data-content');
 
 function drawMenuItem(item, menu, menuIndex) {
     // todo create li element and set href and text
@@ -88,16 +89,32 @@ function drawMenuItem(item, menu, menuIndex) {
 
 function drawMenu(menu, container) {
     var virtualMenu = document.createElement('ul'); // todo create empty element
+    
+    virtualMenu.addEventListener('click', function (event) {
+
+            var target = event.target,
+                content = target.querySelector('.content-hidden');
+
+            if (content) {
+                mainContent.innerHTML = content.innerHTML;
+            }
+
+        }); 
 
     virtualMenu.classList.add('nav-list');
 
 
+    
     for (var i = 0; i < menu.length; i += 1) {
         drawMenuItem(menu[i], virtualMenu, i);
     }
 
+    
     container.innerHTML = '';
     container.appendChild(virtualMenu);
+
+    
+	
 }
 
 
@@ -106,8 +123,8 @@ function drawMenu(menu, container) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var container,
-        mainContent = document.querySelector('#data-content');
+    var container;
+        
 
     container  = document.querySelector('#top-menu');
     drawMenu(topMenu, container);
@@ -131,21 +148,9 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-    var list = document.querySelectorAll('.nav-list');
-    for (var i = 0; i < list.length; i += 1) {
-        list[i].addEventListener('click', function (event) {
-
-            var target = event.target,
-                content = target.querySelector('.content-hidden');
-
-
-            if (content) {
-                mainContent.innerHTML = content.innerHTML;
-            }
-
-        });
-    }
-	
+ 
+    
+    
 
 
     

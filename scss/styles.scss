@@ -115,6 +115,10 @@ $font-page: Arial, Helvetica, sans-serif;
 	padding-bottom: 15px; 
 	border-bottom: 2px dotted gray;
 	margin-right: 20%;
+	font-family: $font-page;
+	font-size: 90%;
+	color: black;
+
 }
 
 .main-text{
@@ -199,6 +203,7 @@ $font-page: Arial, Helvetica, sans-serif;
 	position: relative;
 	margin: 100px 200px;
 	min-width: 700px;
+	min-height: 485px;
 	padding: 0.5%;
 	background-color: white;
 	border-radius: 10px;
@@ -211,7 +216,7 @@ $font-page: Arial, Helvetica, sans-serif;
 	flex-direction: column;
 	border: 1px solid gray;
 	margin: 0.5%; 
-	min-height: 400px;
+	min-height: inherit;
 	background-color: white;
 	line-height: 1.5;
 }
