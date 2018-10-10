@@ -1,3 +1,6 @@
+# JS
 package-lock.json
-
 /node_modules/
+
+# IDE
+.idea/
